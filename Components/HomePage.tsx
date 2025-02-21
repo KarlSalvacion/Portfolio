@@ -154,7 +154,7 @@ const HomePage = ({ darkMode, setDarkMode }: { darkMode: boolean; setDarkMode: R
                     <View style={darkMode ? [stylesHMP.imageContainer, stylesHMP.darkImageContainer] : stylesHMP.imageContainer}>
                         <View style={stylesHMP.imageArea}>
                             <Image
-                                source={require('../Assets/karl2x2.jpg')}
+                                source={darkMode ? require('../Assets/karlblackbg.png') : require('../Assets/karl2x2.jpg')}
                                 style={stylesHMP.imageFormat}
                             />
                         </View>
